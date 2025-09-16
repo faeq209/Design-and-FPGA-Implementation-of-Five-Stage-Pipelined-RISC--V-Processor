@@ -1,0 +1,28 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sim_1/new/test.v,1701530733,verilog,,,,test,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/alu.v,1701528625,verilog,,C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/alu_decoder.v,,alu,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/alu_decoder.v,1701550986,verilog,,C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/branch_comp.v,,alu_decoder,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/branch_comp.v,1701528789,verilog,,C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/clk_dvd.v,,branch_comp,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/clk_dvd.v,1701528827,verilog,,C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/control_unit.v,,clk_dvd,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/control_unit.v,1701551480,verilog,,C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/data_file.v,,control_unit,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/data_file.v,1701528926,verilog,,C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/extension.v,,data_file,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/extension.v,1701528983,verilog,,C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/ff_s12.v,,extension,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/ff_s12.v,1701529034,verilog,,C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/ff_s23.v,,ff_s12,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/ff_s23.v,1701529977,verilog,,C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/hazard_cntl_unit.v,,ff_s23,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/ff_s34.v,1701530021,verilog,,C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/ff_s42.v,,ff_s34,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/ff_s42.v,1701530065,verilog,,C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/hazard_cntl_unit.v,,ff_s42,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/hazard_cntl_unit.v,1701540958,verilog,,C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/instr_decoder.v,,hazard_cntl_unit,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/instr_decoder.v,1701551715,verilog,,C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/instr_file.v,,instr_decoder,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/instr_file.v,1701532070,verilog,,C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/mux.v,,instr_file,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/mux.v,1701530331,verilog,,C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/pc.v,,mux,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/mux4to1.v,1701530325,verilog,,C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/pc.v,,mux4to1,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/pc.v,1701530368,verilog,,C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/pc_adder.v,,pc,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/pc_adder.v,1701550062,verilog,,C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/reg_file.v,,adder,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/reg_file.v,1701530462,verilog,,C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/sign_extend.v,,reg_file,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/sign_extend.v,1701530499,verilog,,C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/stall_cntl.v,,sign_extend,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/stall_cntl.v,1701540659,verilog,,C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/top.v,,stall_cntl,,,,,,,,
+C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sources_1/new/top.v,1701551644,verilog,,C:/Users/faeqh/Documents/Vivado projects/RISC_V_3_Stage/RISC_V_3_Stage.srcs/sim_1/new/test.v,,top,,,,,,,,

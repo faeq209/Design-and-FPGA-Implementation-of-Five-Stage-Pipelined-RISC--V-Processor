@@ -1,0 +1,29 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e800471ae4084bbd86c7ff5888f84002 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 11 for port addr [C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle/RISC_V_Pipeline.srcs/sources_1/new/top.v:39]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 9 for port addr [C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle/RISC_V_Pipeline.srcs/sources_1/new/top.v:48]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_dvd
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.instr_file
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.alu_decoder
+Compiling module xil_defaultlib.instr_decoder
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.branch_comp
+Compiling module xil_defaultlib.sign_extend
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.extension
+Compiling module xil_defaultlib.data_file
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav

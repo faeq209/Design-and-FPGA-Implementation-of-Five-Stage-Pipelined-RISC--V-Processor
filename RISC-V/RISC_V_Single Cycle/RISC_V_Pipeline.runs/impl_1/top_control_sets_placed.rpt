@@ -1,0 +1,586 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Tue Oct 31 14:49:35 2023
+| Host         : Faeq running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   521 |
+| Unused register locations in slices containing registers |     8 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            1 |
+|    16+ |          520 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              20 |            5 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             176 |           44 |
+| Yes          | No                    | No                     |           33044 |         6781 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------------+------------------------+------------------+----------------+
+|  Clock Signal  |        Enable Signal        |    Set/Reset Signal    | Slice Load Count | Bel Load Count |
++----------------+-----------------------------+------------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                             |                        |                1 |              4 |
+|  clk_out_BUFG  |                             |                        |                4 |             16 |
+|  clk_out_BUFG  |                             | p1/data_mem_reg[0][31] |               14 |             48 |
+|  clk_out_BUFG  |                             | p1/p_0_in__0           |                8 |             64 |
+|  clk_out_BUFG  |                             | p1/reg_mem_reg[0][31]  |               22 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[115][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[11][31][0]  |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[120][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[102][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[10][31][0]  |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[103][31][0] |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[100][31][0] |                        |                7 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[121][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[122][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[106][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[123][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[114][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[124][31][0] |                        |               16 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[108][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[107][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[101][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[105][31][0] |                        |                6 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[109][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[110][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[111][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[112][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[113][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[104][31][0] |                        |                7 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[116][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[119][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[117][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[118][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[126][31][0] |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[142][31][0] |                        |               16 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[14][31][0]  |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[151][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[152][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[155][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[133][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[157][31][0] |                        |               19 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[141][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[148][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[138][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[125][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[129][31][0] |                        |                7 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[12][31][0]  |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[131][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[134][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[136][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[144][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[137][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[146][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[132][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[139][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[147][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[149][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[150][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[156][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[127][31][0] |                        |               24 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[135][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[140][31][0] |                        |               18 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[143][31][0] |                        |               19 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[153][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[154][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[158][31][0] |                        |               18 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[159][31][0] |                        |               26 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[13][31][0]  |                        |                7 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[145][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[128][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[130][31][0] |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[160][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[16][31][0]  |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[165][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[181][31][0] |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[168][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[177][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[184][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[17][31][0]  |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[167][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[174][31][0] |                        |               20 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[166][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[161][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[169][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[170][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[179][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[178][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[176][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[162][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[164][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[185][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[188][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[18][31][0]  |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[190][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[187][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[189][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[172][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[15][31][0]  |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[182][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[163][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[173][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[186][31][0] |                        |               16 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[171][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[183][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[175][31][0] |                        |               18 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[180][31][0] |                        |                7 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[203][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[197][31][0] |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[218][31][0] |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[202][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[225][31][0] |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[223][31][0] |                        |               19 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[227][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[240][31][0] |                        |               16 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[242][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[211][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[234][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[243][31][0] |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[244][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[239][31][0] |                        |               20 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[208][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[217][31][0] |                        |                7 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[235][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[237][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[214][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[245][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[192][31][0] |                        |                7 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[199][31][0] |                        |                7 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[196][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[207][31][0] |                        |               18 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[20][31][0]  |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[233][31][0] |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[246][31][0] |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[247][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[248][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[236][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[229][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[226][31][0] |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[22][31][0]  |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[191][31][0] |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[201][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[215][31][0] |                        |                6 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[193][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[230][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[224][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[19][31][0]  |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[206][31][0] |                        |               19 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[220][31][0] |                        |                7 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[231][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[219][31][0] |                        |                7 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[232][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[212][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[195][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[21][31][0]  |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[216][31][0] |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[221][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[238][31][0] |                        |               18 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[213][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[228][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[23][31][0]  |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[241][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[205][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[194][31][0] |                        |                6 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[198][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[200][31][0] |                        |                7 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[204][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[209][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[210][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[222][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[276][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[278][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[279][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[280][31][0] |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[281][31][0] |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[282][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[251][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[265][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[277][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[268][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[273][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[27][31][0]  |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[253][31][0] |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[25][31][0]  |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[270][31][0] |                        |               22 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[275][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[261][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[252][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[249][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[250][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[255][31][0] |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[254][31][0] |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[24][31][0]  |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[256][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[257][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[258][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[262][31][0] |                        |               16 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[263][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[264][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[259][31][0] |                        |               16 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[266][31][0] |                        |               18 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[267][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[260][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[269][31][0] |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[26][31][0]  |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[271][31][0] |                        |               27 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[272][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[274][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[289][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[301][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[2][31][0]   |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[304][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[309][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[287][31][0] |                        |               21 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[297][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[294][31][0] |                        |               18 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[306][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[313][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[317][31][0] |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[298][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[318][31][0] |                        |               20 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[28][31][0]  |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[288][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[300][31][0] |                        |               20 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[295][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[307][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[30][31][0]  |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[291][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[29][31][0]  |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[285][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[310][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[311][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[314][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[315][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[283][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[302][31][0] |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[284][31][0] |                        |               20 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[303][31][0] |                        |               23 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[292][31][0] |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[316][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[312][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[319][31][0] |                        |               19 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[286][31][0] |                        |               21 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[293][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[299][31][0] |                        |               16 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[296][31][0] |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[290][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[305][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[308][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[330][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[331][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[321][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[332][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[339][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[351][31][0] |                        |               25 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[328][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[336][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[333][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[32][31][0]  |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[347][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[337][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[34][31][0]  |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[349][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[322][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[334][31][0] |                        |               20 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[33][31][0]  |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[320][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[341][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[343][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[324][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[340][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[325][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[345][31][0] |                        |               16 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[326][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[348][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[31][31][0]  |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[335][31][0] |                        |               22 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[323][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[338][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[342][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[344][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[346][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[350][31][0] |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[329][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[327][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[386][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[390][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[3][31][0]   |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[401][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[402][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[387][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[358][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[365][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[375][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[371][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[379][31][0] |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[398][31][0] |                        |               19 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[404][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[406][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[360][31][0] |                        |               16 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[403][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[407][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[368][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[352][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[408][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[370][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[373][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[400][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[405][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[372][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[354][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[377][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[37][31][0]  |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[381][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[361][31][0] |                        |               16 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[359][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[376][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[378][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[383][31][0] |                        |               26 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[38][31][0]  |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[392][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[355][31][0] |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[357][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[366][31][0] |                        |               21 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[388][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[393][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[394][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[369][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[384][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[35][31][0]  |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[364][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[356][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[385][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[395][31][0] |                        |               16 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[396][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[380][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[382][31][0] |                        |               16 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[36][31][0]  |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[391][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[397][31][0] |                        |               16 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[374][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[399][31][0] |                        |               25 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[353][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[363][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[389][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[39][31][0]  |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[362][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[367][31][0] |                        |               23 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[415][31][0] |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[428][31][0] |                        |               19 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[411][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[414][31][0] |                        |               18 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[447][31][0] |                        |               22 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[425][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[430][31][0] |                        |               18 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[432][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[443][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[40][31][0]  |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[431][31][0] |                        |               24 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[423][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[446][31][0] |                        |               16 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[436][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[441][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[424][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[420][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[426][31][0] |                        |               16 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[43][31][0]  |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[435][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[429][31][0] |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[442][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[422][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[409][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[413][31][0] |                        |               16 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[433][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[437][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[412][31][0] |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[42][31][0]  |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[427][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[410][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[419][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[418][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[434][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[445][31][0] |                        |               18 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[444][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[439][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[416][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[417][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[440][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[421][31][0] |                        |               16 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[438][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[41][31][0]  |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[451][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[46][31][0]  |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[450][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[473][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[474][31][0] |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[464][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[475][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[485][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[490][31][0] |                        |               18 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[461][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[470][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[476][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[488][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[492][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[45][31][0]  |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[472][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[47][31][0]  |                        |               19 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[493][31][0] |                        |               19 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[494][31][0] |                        |               16 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[495][31][0] |                        |               22 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[460][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[448][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[457][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[462][31][0] |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[481][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[465][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[496][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[489][31][0] |                        |               16 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[486][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[497][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[44][31][0]  |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[459][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[463][31][0] |                        |               25 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[467][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[478][31][0] |                        |               18 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[479][31][0] |                        |               23 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[468][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[482][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[484][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[469][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[487][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[491][31][0] |                        |               16 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[455][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[454][31][0] |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[483][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[498][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[466][31][0] |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[477][31][0] |                        |               18 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[499][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[49][31][0]  |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[4][31][0]   |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[452][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[453][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[449][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[458][31][0] |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[471][31][0] |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[480][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[48][31][0]  |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[53][31][0]  |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[504][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[55][31][0]  |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[51][31][0]  |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[58][31][0]  |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[511][31][0] |                        |               20 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[60][31][0]  |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[456][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[500][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[61][31][0]  |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[64][31][0]  |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[65][31][0]  |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[50][31][0]  |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[503][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[506][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[54][31][0]  |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[57][31][0]  |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[59][31][0]  |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[510][31][0] |                        |               19 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[52][31][0]  |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[63][31][0]  |                        |               20 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[509][31][0] |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[68][31][0]  |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[69][31][0]  |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[505][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[56][31][0]  |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[6][31][0]   |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[501][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[5][31][0]   |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[66][31][0]  |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[67][31][0]  |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[508][31][0] |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[502][31][0] |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[507][31][0] |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[70][31][0]  |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[97][31][0]  |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[77][31][0]  |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[83][31][0]  |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[72][31][0]  |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[90][31][0]  |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[74][31][0]  |                        |               10 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[76][31][0]  |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[7][31][0]   |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[96][31][0]  |                        |               16 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[93][31][0]  |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[71][31][0]  |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[82][31][0]  |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[86][31][0]  |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[73][31][0]  |                        |                7 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[89][31][0]  |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[9][31][0]   |                        |               22 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[87][31][0]  |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[78][31][0]  |                        |               12 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[94][31][0]  |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[85][31][0]  |                        |               16 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[80][31][0]  |                        |                8 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[98][31][0]  |                        |               14 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[75][31][0]  |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[91][31][0]  |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[99][31][0]  |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[95][31][0]  |                        |               24 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[92][31][0]  |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[81][31][0]  |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[84][31][0]  |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[88][31][0]  |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[8][31][0]   |                        |               18 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[79][31][0]  |                        |               21 |             64 |
+|  clk_out_BUFG  | p1/reg_mem_reg[2][31][0]    |                        |               17 |             64 |
+|  clk_out_BUFG  | p1/reg_mem_reg[4][31]_0[0]  |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/reg_mem_reg[1][31][0]    |                        |               11 |             64 |
+|  clk_out_BUFG  | p1/reg_mem_reg[3][31][0]    |                        |                9 |             64 |
+|  clk_out_BUFG  | p1/reg_mem_reg[5][31][0]    |                        |               13 |             64 |
+|  clk_out_BUFG  | p1/data_mem_reg[62][31][0]  |                        |               15 |             64 |
+|  clk_out_BUFG  | p1/E[0]                     |                        |               13 |             84 |
++----------------+-----------------------------+------------------------+------------------+----------------+
+
+

@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Dec 11 19:06:55 2023
+# Process ID: 9060
+# Current directory: C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19144 C:\Users\faeqh\Documents\RISC-V\RISC_V_Single Cycle\RISC_V_Pipeline.xpr
+# Log file: C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle/vivado.log
+# Journal file: C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle/RISC_V_Pipeline.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source test.tcl
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+close_sim

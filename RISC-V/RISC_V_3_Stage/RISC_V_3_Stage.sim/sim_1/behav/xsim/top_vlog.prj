@@ -1,0 +1,30 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../RISC_V_3_Stage.srcs/sources_1/new/alu.v" \
+"../../../../RISC_V_3_Stage.srcs/sources_1/new/alu_decoder.v" \
+"../../../../RISC_V_3_Stage.srcs/sources_1/new/branch_comp.v" \
+"../../../../RISC_V_3_Stage.srcs/sources_1/new/clk_dvd.v" \
+"../../../../RISC_V_3_Stage.srcs/sources_1/new/control_unit.v" \
+"../../../../RISC_V_3_Stage.srcs/sources_1/new/data_file.v" \
+"../../../../RISC_V_3_Stage.srcs/sources_1/new/extension.v" \
+"../../../../RISC_V_3_Stage.srcs/sources_1/new/ff_s12.v" \
+"../../../../RISC_V_3_Stage.srcs/sources_1/new/ff_s23.v" \
+"../../../../RISC_V_3_Stage.srcs/sources_1/new/ff_s34.v" \
+"../../../../RISC_V_3_Stage.srcs/sources_1/new/ff_s42.v" \
+"../../../../RISC_V_3_Stage.srcs/sources_1/new/hazard_cntl_unit.v" \
+"../../../../RISC_V_3_Stage.srcs/sources_1/new/instr_decoder.v" \
+"../../../../RISC_V_3_Stage.srcs/sources_1/new/instr_file.v" \
+"../../../../RISC_V_3_Stage.srcs/sources_1/new/mux.v" \
+"../../../../RISC_V_3_Stage.srcs/sources_1/new/mux4to1.v" \
+"../../../../RISC_V_3_Stage.srcs/sources_1/new/pc.v" \
+"../../../../RISC_V_3_Stage.srcs/sources_1/new/pc_adder.v" \
+"../../../../RISC_V_3_Stage.srcs/sources_1/new/reg_file.v" \
+"../../../../RISC_V_3_Stage.srcs/sources_1/new/sign_extend.v" \
+"../../../../RISC_V_3_Stage.srcs/sources_1/new/stall_cntl.v" \
+"../../../../RISC_V_3_Stage.srcs/sources_1/new/top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

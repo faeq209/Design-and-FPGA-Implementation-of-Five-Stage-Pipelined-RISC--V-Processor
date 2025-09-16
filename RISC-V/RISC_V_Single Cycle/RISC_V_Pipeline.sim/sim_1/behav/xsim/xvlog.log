@@ -1,0 +1,35 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle/RISC_V_Pipeline.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle/RISC_V_Pipeline.srcs/sources_1/new/alu_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_decoder
+INFO: [VRFC 10-2458] undeclared symbol op_check_3, assumed default net type wire [C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle/RISC_V_Pipeline.srcs/sources_1/new/alu_decoder.v:33]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle/RISC_V_Pipeline.srcs/sources_1/new/branch_comp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_comp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle/RISC_V_Pipeline.srcs/sources_1/new/clk_dvd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_dvd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle/RISC_V_Pipeline.srcs/sources_1/new/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle/RISC_V_Pipeline.srcs/sources_1/new/data_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle/RISC_V_Pipeline.srcs/sources_1/new/extension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extension
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle/RISC_V_Pipeline.srcs/sources_1/new/instr_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle/RISC_V_Pipeline.srcs/sources_1/new/instr_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle/RISC_V_Pipeline.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle/RISC_V_Pipeline.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle/RISC_V_Pipeline.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle/RISC_V_Pipeline.srcs/sources_1/new/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle/RISC_V_Pipeline.srcs/sources_1/new/sign_extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sign_extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle/RISC_V_Pipeline.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle/RISC_V_Pipeline.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/faeqh/Documents/RISC-V/RISC_V_Single Cycle/RISC_V_Pipeline.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -37,7 +37,7 @@ The proposed pipelined processor demonstrates a significant performance gain com
 📖 Reference
 
 This work is published in the IEEE International Conference on Intelligent and Innovative Computing Technologies (I2CT), 2024.
-👉 IEEE Xplore Link
+👉 https://ieeexplore.ieee.org/document/10544184
 
 🚀 Future Scope
 

@@ -1,55 +1,50 @@
-This project implements a RISC-V (RV32I) 5-stage pipelined processor on the Basys-3 FPGA board, designed in Verilog HDL. The processor follows a Harvard architecture with separate instruction and data memories, and supports 37 out of 47 RV32I instructions.
+This repository presents the design and FPGA implementation of a RISC-V (RV32I) 5-stage pipelined processor developed in Verilog HDL and deployed on the Xilinx Basys-3 FPGA (Artix-7). The processor architecture is based on the Harvard memory model, incorporating independent instruction and data memories, and supports 37 of the 47 RV32I instructions.
 
-🔑 Features
+🔑 Key Contributions
 
-RV32I ISA support with 37 implemented instructions
+Pipeline Implementation: Five pipeline stages—Instruction Fetch, Instruction Decode, Execute, Memory Access, and Write Back—achieving improved throughput and reduced cycle time.
 
-5 pipeline stages: Instruction Fetch, Decode, Execute, Memory, Write Back
+Hazard Mitigation: Integration of a Hazard Control Unit (HCU) to manage data hazards through forwarding and to address control hazards via stalling.
 
-Hazard Control Unit (HCU) for stall management and data forwarding
+Performance Evaluation:
 
-Harvard architecture with 64KB instruction memory and 16KB data memory
+Single-cycle design achieved a maximum operating frequency of 31.6 MHz with 244 mW power consumption.
 
-FPGA verified with programs like:
+Pipelined design improved maximum frequency to 87.8 MHz (≈2.78× higher) with reduced power consumption of 96 mW.
 
-Sum of N natural numbers
+Validation: Verified through FPGA prototyping using benchmark programs (e.g., summation of N natural numbers, computation of the Nth Fibonacci term).
 
-Nth Fibonacci number
+⚙️ Implementation Details
 
-Performance improvements over single-cycle core:
+HDL: Verilog
 
-Max frequency increased from 31.6 MHz → 87.8 MHz (≈2.8×)
+Board: Xilinx Basys-3 (Artix-7 FPGA)
 
-Power reduced from 244 mW → 96 mW
+Toolchain: Xilinx Vivado
 
-⚙️ Implementation
+Memory:
 
-Language: Verilog HDL
+Instruction Memory: 64 KB (ROM)
 
-FPGA Board: Basys-3 (Xilinx Artix-7)
+Data Memory: 16 KB (RAM)
 
-Simulation/Tools: Xilinx Vivado
+I/O: 8-bit input (switches), 10-bit output (LEDs)
 
-I/O:
+📈 Results & Insights
 
-Input via switches (8-bit)
+The proposed pipelined processor demonstrates a significant performance gain compared to its single-cycle counterpart, highlighting the impact of pipeline design and hazard control strategies on clock frequency and power efficiency.
 
-Output via LEDs (10-bit)
+📖 Reference
 
-📈 Results
+This work is published in the IEEE International Conference on Intelligent and Innovative Computing Technologies (I2CT), 2024.
+👉 IEEE Xplore Link
 
-Correct execution of arithmetic, branching, memory, and logic instructions
+🚀 Future Scope
 
-Efficient hazard handling with data forwarding and pipeline stalls
+HDL optimization to further reduce resource utilization.
 
-Optimized for throughput, power, and clock frequency
+Integration of cache memory to enhance memory performance.
 
-🚀 Future Work
+Addition of bus controllers and peripheral interfacing.
 
-Optimize HDL for reduced resource utilization
-
-Add cache memory for faster access
-
-Implement bus controllers for peripheral interfacing
-
-Extend ISA with additional instructions
+Extension of the ISA beyond RV32I to support advanced applications.
